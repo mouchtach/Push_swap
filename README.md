@@ -22,9 +22,9 @@ You are given a list of integers and two stacks (`a` and `b`). The task is to so
 
 ## 🧠 Algorithm Explanation
 
-### 🔹 1. `range.c`: Chunk-Based Sorting (Partitioning)
+### 🔹 1. `/push_swap__range`: Chunk-Based Sorting (Partitioning)
 
-The file `range.c` implements a **chunking algorithm**. Here's how it works:
+The file `push_swap` implements a **chunking algorithm**. Here's how it works:
 
 - The unsorted list is copied and sorted to find "pivot values."
 - Based on input size, the list is divided into `n` ranges or **chunks**.
@@ -41,9 +41,9 @@ The file `range.c` implements a **chunking algorithm**. Here's how it works:
 
 ---
 
-### 🔹 2. `best_move.c`: Cost Optimization Algorithm
+### 🔹 2. `/push_swap__best_move`: Cost Optimization Algorithm
 
-Once numbers are in `stack b`, `best_move.c` decides **which element to push back to `stack a` next** by computing move costs.
+Once numbers are in `stack b`, `push_swap` decides **which element to push back to `stack a` next** by computing move costs.
 
 For each element in `stack b`:
 - Calculate how many moves it takes to bring it to the top of `b` (using `rb` or `rrb`).
